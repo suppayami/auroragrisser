@@ -12,6 +12,8 @@ specifiers:
   '@types/testing-library__jest-dom': ^5.14.5
   '@vitejs/plugin-react': ^2.2.0
   autoprefixer: ^10.4.13
+  clsx: ^1.2.1
+  easystarjs: ^0.4.4
   eslint: ^8.27.0
   eslint-config-prettier: ^8.5.0
   eslint-plugin-import: ^2.26.0
@@ -33,6 +35,8 @@ specifiers:
 dependencies:
   '@heroicons/react': 2.0.13_react@18.2.0
   '@tanstack/react-query': 4.14.5_biqbaboplfbrettd7655fr4n2y
+  clsx: 1.2.1
+  easystarjs: 0.4.4
   i18next: 22.0.4
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -1137,6 +1141,11 @@ packages:
     resolution: {integrity: sha512-yH4RezKOGlOhxkmhbeNuC4eYZKAUsEaGtBuBzDDP1eFUKiccDWzBABxBfOx31IDwDIXMTxWuwAxUGModvkbuVw==}
     dev: true
 
+  /clsx/1.2.1:
+    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+    engines: {node: '>=6'}
+    dev: false
+
   /color-convert/1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==}
     dependencies:
@@ -1360,6 +1369,12 @@ packages:
     dependencies:
       webidl-conversions: 7.0.0
     dev: true
+
+  /easystarjs/0.4.4:
+    resolution: {integrity: sha512-ZSt0TkB8xuIXRIrKsM3jkmk1/cZUtyvf0DqOXf6wuKq9slx9UA5kkLtiaWhtmOQFJFKdabbvXwk6RO0znghArQ==}
+    dependencies:
+      heap: 0.2.6
+    dev: false
 
   /electron-to-chromium/1.4.284:
     resolution: {integrity: sha512-M8WEXFuKXMYMVr45fo8mq0wUrrJHheiKZf6BArTKk9ZBYCKJEOU5H8cdWgDT+qCVZf7Na4lVUaZsA+h6uA9+PA==}
@@ -2300,6 +2315,10 @@ packages:
     dependencies:
       function-bind: 1.1.1
     dev: true
+
+  /heap/0.2.6:
+    resolution: {integrity: sha512-MzzWcnfB1e4EG2vHi3dXHoBupmuXNZzx6pY6HldVS55JKKBoq3xOyzfSaZRkJp37HIhEYC78knabHff3zc4dQQ==}
+    dev: false
 
   /html-encoding-sniffer/3.0.0:
     resolution: {integrity: sha512-oWv4T4yJ52iKrufjnyZPkrN0CH3QnrUqdB6In1g5Fe1mia8GmF36gnfNySxoZtxD5+NmYw1EElVXiBk93UeskA==}

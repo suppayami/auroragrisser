@@ -7,7 +7,7 @@ trim_trailing_whitespace = true
 end_of_line = lf
 
 [*.{js,json,ts,tsx}]
-indent_style = space
+indent_style = tab
 indent_size = 4
 
 [*.{yml}]
