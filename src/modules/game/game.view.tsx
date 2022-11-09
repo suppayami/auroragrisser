@@ -36,7 +36,7 @@ const tilesToDict = (tiles: Point[]) => {
 }
 
 export const GameView = () => {
-	const [heroPos, setHeroPos] = useState<Point>(() => [...START_POINT])
+	const [heroPos] = useState<Point>(() => [...START_POINT])
 	const movableTiles = useMemo(
 		() => tilesToDict(getMovableTiles(heroPos, { mobility: 5, grid: GRIDS })),
 		[heroPos],

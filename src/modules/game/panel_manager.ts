@@ -30,7 +30,9 @@ export const getMovableTiles = (start: Point, options: { mobility: number; grid:
 		// start point put to close
 		closePointCheck[getTileKey(current)] = true
 
+		// if current tile already exceed mobility, skip
 		if (costs[getTileKey(current)] >= options.mobility) {
+			closePointCheck[getTileKey(current)] = true
 			current = open.shift()
 			continue
 		}
@@ -47,10 +49,12 @@ export const getMovableTiles = (start: Point, options: { mobility: number; grid:
 				continue
 			}
 
+			// skip if blocked
 			if (options.grid[tile[1]][tile[0]] === BLOCK_TILE) {
 				continue
 			}
 
+			// mobility cost calc
 			const cost = options.grid[tile[1]][tile[0]] || 1
 			const tileCost = costs[getTileKey(tile)] || 0
 			const currentCost = (costs[getTileKey(current)] || 0) + cost
@@ -66,12 +70,14 @@ export const getMovableTiles = (start: Point, options: { mobility: number; grid:
 				continue
 			}
 
+			// if the point wasn't closed, continue checking
 			if (!closePointCheck[getTileKey(tile)]) {
 				if (!isTileInOpen) {
 					open.push(tile)
 				}
 			}
 
+			// only push the tile to result once
 			if (!checkedPoints[check]) {
 				result.push(tile)
 			}
@@ -80,9 +86,6 @@ export const getMovableTiles = (start: Point, options: { mobility: number; grid:
 		}
 
 		current = open.shift()
-		if (current && costs[getTileKey(current)] >= options.mobility) {
-			closePointCheck[getTileKey(current)] = true
-		}
 	}
 
 	return result
