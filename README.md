@@ -1,14 +1,8 @@
-# Yami react template
+# Auroragrisser
 
-Personal template, use at your own risk.
+### Super WIP
+A simple 2D tile-based SRPG.
 
-## Features
-- React 18, Vite 3, pnpm, TypeScript
-- React Router
-- i18next
-- React query
-- Tailwind
-- Heroicons
-- Vitest + Testing Library React
-- Personal eslint config + prettier
-- State management TBD
+## Install
+- pnpm i
+- pnpm dev
