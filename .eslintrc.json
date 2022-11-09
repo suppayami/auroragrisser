@@ -1,0 +1,30 @@
+{
+    "extends": [
+        "@suppayami/react",
+        "prettier",
+        "plugin:prettier/recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:import/typescript"
+    ],
+    "rules": {
+        "import/no-unresolved": "off",
+        "import/newline-after-import": ["error"],
+        "import/no-default-export": ["error"],
+        "import/no-named-as-default": ["off"],
+        "import/order": [
+            "error",
+            {
+                "newlines-between": "always",
+                "groups": ["builtin", "external", "internal", ["parent", "sibling", "index"]],
+                "pathGroups": [
+                    {
+                        "pattern": "@app/**",
+                        "group": "internal"
+                    }
+                ],
+                "pathGroupsExcludedImportTypes": ["builtin"]
+            }
+        ]
+    }
+}

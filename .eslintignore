@@ -1,0 +1,9 @@
+.vscode
+node_modules
+dist
+build
+scripts
+*.js
+src/*.d.ts
+src/*.js
+src/*.json

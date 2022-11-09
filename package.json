@@ -1,0 +1,47 @@
+{
+  "name": "@suppayami/react-template",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "packageManager": "pnpm@7.13.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint --ext .ts,.tsx src",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.0.13",
+    "@tanstack/react-query": "^4.14.5",
+    "i18next": "^22.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^12.0.0",
+    "react-router-dom": "^6.4.3"
+  },
+  "devDependencies": {
+    "@suppayami/eslint-config-react": "^1.2.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@types/node": "^18.11.9",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "@types/testing-library__jest-dom": "^5.14.5",
+    "@vitejs/plugin-react": "^2.2.0",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.27.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jsdom": "^20.0.2",
+    "postcss": "^8.4.18",
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.13",
+    "tailwindcss": "^3.2.2",
+    "typescript": "^4.6.4",
+    "vite": "^3.2.3",
+    "vitest": "^0.25.0"
+  }
+}
